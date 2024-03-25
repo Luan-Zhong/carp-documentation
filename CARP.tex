@@ -216,7 +216,7 @@
 	\noindent If genome sequence files are very big and consist of multiple contigs or scaffolds ($>$200MB), you can use bundle to split them into smaller files. For example,
 	
 	\begin{lstlisting}[language=bash]
-	go get github.com/biogo/examples/bundle
+	go install -u github.com/biogo/examples/bundle@lastest
 	bundle -bundle 80000000 -in seq.fa \end{lstlisting}
 	
 	\noindent -bundle: specifies the total sequence length in a bundle. (default 20000000, 20MB).\\
